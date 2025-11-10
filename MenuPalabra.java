@@ -28,6 +28,20 @@ public class MenuPalabra {
                         System.out.println("La palabra no es un palíndromo.");
                     }
                     break;
+                case 3:
+                    if (palabra.isEmpty()) {
+                        System.out.println("Primero debes introducir una palabra.");
+                    } else {
+                        System.out.println("Palabra invertida: " + new StringBuilder(palabra).reverse());
+                    }
+                    break;
+                case 4:
+                    if (palabra.isEmpty()) {
+                        System.out.println("Primero debes introducir una palabra.");
+                    } else {
+                        System.out.println("Número de caracteres: " + palabra.length());
+                    }
+                    break;
             }
         } while (opcion != 5);
         System.out.println("¡Programa finalizado!");
